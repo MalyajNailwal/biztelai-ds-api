@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset Summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .summary-container {
+            max-width: 700px;
+            margin: 5% auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+        }
+        .summary-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .summary-item {
+            font-size: 1.3rem;
+            background: #e9f2ff;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        .summary-item:hover {
+            background-color: #d0e6ff;
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+<div class="summary-container">
+    <h2 class="summary-title">📊 Dataset Summary</h2>
+
+    <div class="summary-item">📄 Total Records: <strong>{{ total_records }}</strong></div>
+    <div class="summary-item">🗂️ Total Conversations: <strong>{{ total_conversations }}</strong></div>
+    <div class="summary-item">👥 Total Agents: <strong>{{ total_agents }}</strong></div>
+
+    <div style="text-align: center;">
+        <a href="/" class="btn-back">← Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

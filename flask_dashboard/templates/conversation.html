@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversation Summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .container-box {
+            max-width: 900px;
+            margin: 5% auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+            transform: scale(1.03);
+            box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+        }
+
+        .result-box {
+            background-color: #e9f2ff;
+            border-left: 5px solid #007bff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-size: 1.1rem;
+        }
+
+        .error-msg {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn-back {
+            margin-top: 30px;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #0056b3;
+            transform: scale(1.03);
+        }
+
+        .id-box {
+            max-height: 250px;
+            overflow-y: auto;
+            background-color: #f1f9ff;
+            border: 1px solid #cce5ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .id-box h5 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .id-box code {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .id-box code:hover {
+            background-color: #d4edff;
+        }
+    </style>
+
+    <!-- JavaScript: Auto-fill Input -->
+    <script>
+        function fillInput(value) {
+            document.getElementById("conv_id").value = value;
+        }
+    </script>
+</head>
+<body>
+
+<div class="container-box">
+    <h2 class="text-center mb-4">💬 Conversation Analysis</h2>
+
+    <div class="row">
+        <!-- Form Section -->
+        <div class="col-md-7">
+            <form method="POST">
+                <label for="conv_id" class="form-label">Enter Conversation ID:</label>
+                <input type="text" id="conv_id" name="conv_id" class="form-control mb-3" placeholder="Paste or click from right side →">
+                <div class="text-center">
+                    <button type="submit" class="btn-submit">🔍 Analyze</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Scrollable ID Box Section -->
+        <div class="col-md-5">
+            <div class="id-box">
+                <h5>🔍 Sample Conversation IDs (Click to Auto-Fill)</h5>
+                <code onclick="fillInput('t_50e092b4-c009-4c92-8756-4b334e26db38')">t_50e092b4-c009-4c92-8756-4b334e26db38</code>
+                <code onclick="fillInput('t_d004c097-424d-45d4-8f91-833d85c2da31')">t_d004c097-424d-45d4-8f91-833d85c2da31</code>
+                <code onclick="fillInput('t_f6789857-c30c-423a-bdf5-d6207dc7db9d')">t_f6789857-c30c-423a-bdf5-d6207dc7db9d</code>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Section -->
+    {% if summary %}
+        {% if summary.error %}
+            <div class="error-msg text-center">{{ summary.error }}</div>
+        {% else %}
+            <div class="result-box mt-4">
+                <p><strong>🔗 Article URL:</strong> {{ summary.article_url }}</p>
+                <p><strong>🗨️ Agent 1 Messages:</strong> {{ summary.agent_1_msgs }}</p>
+                <p><strong>🗨️ Agent 2 Messages:</strong> {{ summary.agent_2_msgs }}</p>
+                <p><strong>😊 Agent 1 Sentiment:</strong> {{ summary.agent_1_sentiment }}</p>
+                <p><strong>😊 Agent 2 Sentiment:</strong> {{ summary.agent_2_sentiment }}</p>
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <div class="text-center">
+        <a href="/" class="btn-back">← Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>
