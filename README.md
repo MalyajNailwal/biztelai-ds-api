@@ -1,4 +1,4 @@
-# BiztelAI Data Science Assignment - March '25 (Fixed Version)
+# BiztelAI Data Science Assignment - March '25 
 
 ## Setup Instructions
 
