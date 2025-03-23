@@ -94,7 +94,7 @@ EDA was performed to understand the overall structure and trends in the chat dat
 
 ### 📈 Bonus Insights (Add-ons)
 
-- You can further enhance this by adding:
+- We can further enhance this by adding:
   - Conversation duration analytics
   - Top keywords per sentiment
   - Agent performance heatmaps
@@ -104,7 +104,6 @@ EDA was performed to understand the overall structure and trends in the chat dat
 
 ### ✅ Conclusion
 
-This project successfully combines data cleaning, EDA, sentiment analysis, and REST API development in one production-ready assignment. It can easily be extended into a larger business intelligence dashboard or NLP model pipeline.
-
+This project successfully combines data cleaning, EDA, sentiment analysis, and REST API development in one production-ready assignment.
 ---
 
