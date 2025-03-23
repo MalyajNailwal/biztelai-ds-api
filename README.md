@@ -27,29 +27,49 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 ## 📁 Project Directory Structure
 
 ```
-📁 project-root/
-├── data/
-│   └── chat_transcripts.json
-├── analysis/
-│   ├── preprocessing.py
-│   ├── eda.py
-│   ├── sentiment_analysis.py
-│   └── wordcloud_generator.py
-├── notebooks/
-│   └── EDA_Visualization.ipynb
-├── api/
-│   └── app.py
-├── outputs/
-│   ├── charts/
-│   ├── sentiment_summary.csv
-│   └── wordclouds/
-├── assets/
-│   ├── a.png
-│   ├── b.png
-│   ├── c.png
-│   └── d.png
-├── requirements.txt
-└── README.md
+
+📁 app/
+│   └── main.py
+📁 data/
+│   └── BiztelAI_DS_Dataset_Mar25.json
+│   └── README.txt
+📁 flask_dashboard/
+│   ├── app.py
+│   └── templates/
+│       ├── conversation.html
+│       ├── index.html
+│       └── summary.html
+📁 notebooks/
+│   ├── EDA_Visualization.ipynb
+│   ├── agent_message_distribution.png
+│   ├── message_length_distribution.png
+│   ├── sentiment_distribution.png
+│   ├── sentiment_timeline_plot.png
+│   ├── tfidf_agent1_keywords.png
+│   ├── top_words_Angry.png
+│   ├── top_words_Curious_to_diverge.png
+│   ├── top_words_Disgusted.png
+│   ├── top_words_Fearful.png
+│   ├── top_words_Happy.png
+│   ├── top_words_Neutral.png
+│   ├── top_words_Sad.png
+│   ├── top_words_Surprised.png
+│   └── wordcloud_agent_1.png
+📁 src/
+│   ├── __init__.py
+│   ├── data_cleaner.py
+│   ├── data_loader.py
+│   ├── data_transformer.py
+│   └── eda_analysis.py
+📁 venv/
+│   ├── bin/
+│   ├── include/
+│   ├── lib/
+│   └── share/
+📄 pyvenv.cfg
+📄 .gitignore
+📄 requirements.txt
+📄 README.md
 
 ```
 
