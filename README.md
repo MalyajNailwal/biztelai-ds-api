@@ -96,7 +96,7 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 
 ---
 
-## 📈 Output Insights -> Flak app
+## 📈 Output Insights -> Flask app
 
 ### Biztel.ai Flask Dashboard
 ![First](assets/a.png)
