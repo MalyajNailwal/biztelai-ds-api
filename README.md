@@ -131,15 +131,6 @@ flask
 
 ---
 
-## 🎯 Future Scope
-
-- Add interactive dashboard using Streamlit  
-- Integrate multilingual sentiment analysis  
-- Real-time conversation tracking and alerting  
-- Deployment on Hugging Face Spaces
-
----
-
 ## 🙌 Author
 
 **Developed by:** [Malyaj Nailwal]  
