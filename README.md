@@ -35,6 +35,8 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 │   ├── eda.py
 │   ├── sentiment_analysis.py
 │   └── wordcloud_generator.py
+├── notebooks/
+│   └── EDA_Visualization.ipynb
 ├── api/
 │   └── app.py
 ├── outputs/
@@ -48,6 +50,7 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 │   └── d.png
 ├── requirements.txt
 └── README.md
+
 ```
 
 ---
