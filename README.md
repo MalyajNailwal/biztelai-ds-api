@@ -109,7 +109,7 @@ python analysis/sentiment_analysis.py
 python analysis/wordcloud_generator.py
 ```
 
-4️⃣ Launch the Flask API  
+4️⃣ Launch the Flask APP  
 ```bash
 cd flask_dashboard
 python app.py
