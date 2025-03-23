@@ -92,7 +92,7 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 
 1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/malyajnailwal/biztelai-ds-assignment.git
+git clone https://github.com/Malyajnailwal/biztelai-ds-assignment.git 
 cd biztelai-ds-assignment
 ```
 
