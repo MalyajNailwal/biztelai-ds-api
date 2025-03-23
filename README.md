@@ -90,7 +90,7 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 
 ## 🔗 Live API Endpoints (Deployed)
 
-- 🚀 **Swagger UI (API Testing)** 👉 https://biztelai-ds-api.onrender.com/docs  
+- 🚀 **API Testing** 👉 https://biztelai-ds-api.onrender.com/docs  
 - 📊 **Dataset Summary** 👉 https://biztelai-ds-api.onrender.com/summary  
 - 💬 **Conversation Analysis (Sample)** 👉 https://biztelai-ds-api.onrender.com/chat_analysis/t_d004c097-424d-45d4-8f91-833d85c2da31
 
