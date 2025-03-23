@@ -1,4 +1,4 @@
-# 🤖 Biztel.ai DS Assignment 
+# 🤖 Biztel.ai DS Assignment
 
 This project is a comprehensive Data Science assignment solution built for **BiztelAI**. It involves end-to-end data processing, exploratory analysis, sentiment classification, and REST API development — all integrated into a production-ready structure.
 
@@ -7,10 +7,10 @@ This project is a comprehensive Data Science assignment solution built for **Biz
 ## 🚀 Project Objective
 
 Analyze customer-agent chat transcripts to extract meaningful insights such as:
-- Customer sentiment trends
-- Agent performance metrics
-- Response behaviors
-- Keyword visualizations
+- Customer sentiment trends  
+- Agent performance metrics  
+- Response behaviors  
+- Keyword visualizations  
 - REST API delivery of analysis results
 
 ---
@@ -41,6 +41,11 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 │   ├── charts/
 │   ├── sentiment_summary.csv
 │   └── wordclouds/
+├── assets/
+│   ├── a.png
+│   ├── b.png
+│   ├── c.png
+│   └── d.png
 ├── requirements.txt
 └── README.md
 ```
@@ -62,18 +67,25 @@ Analyze customer-agent chat transcripts to extract meaningful insights such as:
 
 ## 🔗 Live API Endpoints (Deployed)
 
-- 🚀 **Swagger UI (API Testing)** 👉 [https://biztelai-ds-api.onrender.com/docs](https://biztelai-ds-api.onrender.com/docs)  
-- 📊 **Dataset Summary** 👉 [https://biztelai-ds-api.onrender.com/summary](https://biztelai-ds-api.onrender.com/summary)  
-- 💬 **Conversation Analysis (Sample)** 👉 [https://biztelai-ds-api.onrender.com/chat_analysis/t_d004c097-424d-45d4-8f91-833d85c2da31](https://biztelai-ds-api.onrender.com/chat_analysis/t_d004c097-424d-45d4-8f91-833d85c2da31)
+- 🚀 **Swagger UI (API Testing)** 👉 https://biztelai-ds-api.onrender.com/docs  
+- 📊 **Dataset Summary** 👉 https://biztelai-ds-api.onrender.com/summary  
+- 💬 **Conversation Analysis (Sample)** 👉 https://biztelai-ds-api.onrender.com/chat_analysis/t_d004c097-424d-45d4-8f91-833d85c2da31
 
 ---
 
-## 📈 Output Insights
+## 📈 Output Insights -> Flak app
 
-- 📊 **Bar Charts:** Sentiment distribution  
-- 🕵️ **Agent Analysis:** Response count & chat handling  
-- ☁️ **WordClouds:** Most used words by customer/agent  
-- ⏱ **Response Time Analysis:** Average agent reply time
+### Biztel.ai Flask Dashboard
+![First](assets/a.png)
+
+### 🕵️ Dataset Summary
+![Second](assets/b.png)
+
+### ☁️ Conversation Analysis
+![Third](assets/c.png)
+
+### ☁️ Conversation Analysis (main)
+![Fourth](assets/d.png)
 
 ---
 
@@ -133,8 +145,5 @@ flask
 
 ## 🙌 Author
 
-**Developed by:** [Malyaj Nailwal]  
+**Developed by:** Malyaj Nailwal  
 📫 **Email:** heymalyaj@gmail.com
-
----
-
