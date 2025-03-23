@@ -111,7 +111,7 @@ python analysis/wordcloud_generator.py
 
 4️⃣ Launch the Flask API  
 ```bash
-cd api
+cd flask_dashboard
 python app.py
 ```
 
