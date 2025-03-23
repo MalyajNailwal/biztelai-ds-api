@@ -142,6 +142,9 @@ flask
 ```
 
 ---
+📘 [View Full Documentation](./DOCUMENTATION.md)
+
+---
 
 ## 🙌 Author
 
