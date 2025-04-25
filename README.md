@@ -1,4 +1,4 @@
-# 🤖 Biztel.ai DS Assignment
+# 🤖 -
 
 This project is a comprehensive Data Science assignment solution built for **BiztelAI**. It involves end-to-end data processing, exploratory analysis, sentiment classification, and REST API development — all integrated into a production-ready structure.
 
